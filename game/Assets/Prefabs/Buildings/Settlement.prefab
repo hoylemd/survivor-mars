@@ -1075,12 +1075,12 @@ TextMesh:
   m_GameObject: {fileID: 103714}
   m_Text: Settlement
   m_OffsetZ: 0
-  m_CharacterSize: 1.19000006
+  m_CharacterSize: .600000024
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 25
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 1c790e28d781144d8b90ee3ab8b5539d, type: 3}
@@ -1096,12 +1096,12 @@ TextMesh:
   m_GameObject: {fileID: 177508}
   m_Text: '|||||||||||||||||||'
   m_OffsetZ: 0
-  m_CharacterSize: 1.19000006
+  m_CharacterSize: .600000024
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 25
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 1c790e28d781144d8b90ee3ab8b5539d, type: 3}

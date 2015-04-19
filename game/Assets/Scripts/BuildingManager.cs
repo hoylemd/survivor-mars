@@ -70,7 +70,7 @@ class BuildingManager : MonoBehaviour {
   }
 
 	void hpGUI(){
-		transform.GetChild (0).GetComponent<TextMesh> ().text = HP.ToString();
+		transform.GetChild (0).GetComponent<TextMesh> ().text = HP.ToString() + "%";
 	}
 
 

@@ -10,6 +10,9 @@ public class Robot_surfaceMove : MonoBehaviour {
 	public float jitter = .1f;
 	public bool selected = false;
 	public bool inTube = false;
+	public int repairVal = 1;
+	public float repairWait = 1;
+	float nextRepair = 0;
 	int tube;
 	// Use this for initialization
 	void Start () {
@@ -75,6 +78,19 @@ public class Robot_surfaceMove : MonoBehaviour {
 						tube = 2;
 				}
 				GameObject.Find ("GameController").GetComponent<GameController> ().EnterTube (tube, gameObject);
+		}
+	}
+
+	void OnTriggerStay(Collider other){
+		if (other.tag == "Building") {
+			BuildingManager bm = other.collider.GetComponent<BuildingManager>();
+			if (Time.time > nextRepair){
+				nextRepair = Time.time + repairWait;
+				if (bm.HP != bm.maxHP){
+					bm.repair(repairVal);
+					
+				}		
+			}
 		}
 	}
 

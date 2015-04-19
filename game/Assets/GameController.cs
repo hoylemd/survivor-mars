@@ -80,13 +80,26 @@ public class GameController : MonoBehaviour {
 					}
 				}
 				
-				if (hitInfo.collider.tag == "TubeEntrance"|| hitInfo.collider.tag == "Building") {
+				if (hitInfo.collider.tag == "TubeEntrance") {
 
 					if (currentRobot != null && currentRobot.GetComponent<Robot_surfaceMove>().inTube == false) {
 						//currentRobot.GetComponent<Robot_surfaceMove>().dest = hitInfo.collider.transform;
 						//Instantiate(click, hitInfo.point, Quaternion.identity);
 						currentRobot.GetComponent<Robot_surfaceMove>().target = hitInfo.point;
 						currentRobot.GetComponent<Robot_surfaceMove>().moving = true;
+					} else {
+						DeselectRobot();
+					}
+				}
+
+				if (hitInfo.collider.tag == "Building") {
+					
+					if (currentRobot != null && currentRobot.GetComponent<Robot_surfaceMove>().inTube == false) {
+						//currentRobot.GetComponent<Robot_surfaceMove>().dest = hitInfo.collider.transform;
+						//Instantiate(click, hitInfo.point, Quaternion.identity);
+						currentRobot.GetComponent<Robot_surfaceMove>().target = hitInfo.point;
+						currentRobot.GetComponent<Robot_surfaceMove>().moving = true;
+
 					} else {
 						DeselectRobot();
 					}

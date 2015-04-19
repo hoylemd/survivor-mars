@@ -1749,6 +1749,8 @@ MonoBehaviour:
   jitter: .400000006
   selected: 0
   inTube: 0
+  repairVal: 1
+  repairWait: 1
 --- !u!95 &85529447
 Animator:
   serializedVersion: 3
@@ -5736,6 +5738,8 @@ MonoBehaviour:
   jitter: .400000006
   selected: 0
   inTube: 0
+  repairVal: 1
+  repairWait: 1
 --- !u!95 &266494889
 Animator:
   serializedVersion: 3
@@ -31101,6 +31105,8 @@ MonoBehaviour:
   jitter: .400000006
   selected: 0
   inTube: 0
+  repairVal: 1
+  repairWait: 1
 --- !u!95 &1614836514
 Animator:
   serializedVersion: 3
@@ -35801,6 +35807,8 @@ MonoBehaviour:
   jitter: .400000006
   selected: 0
   inTube: 0
+  repairVal: 1
+  repairWait: 1
 --- !u!95 &1824236161
 Animator:
   serializedVersion: 3
@@ -41625,6 +41633,8 @@ MonoBehaviour:
   jitter: .400000006
   selected: 0
   inTube: 0
+  repairVal: 1
+  repairWait: 1
 --- !u!95 &2109578502
 Animator:
   serializedVersion: 3

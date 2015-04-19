@@ -47,7 +47,7 @@ GameObject:
   - 95: {fileID: 9552426}
   - 65: {fileID: 6552426}
   - 114: {fileID: 11449328}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Algae Farm
   m_TagString: Building
   m_Icon: {fileID: 0}
@@ -884,8 +884,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.13717461, y: 3.20016098, z: 9.47337341}
-  m_Center: {x: -1.36234903, y: 1.10007858, z: -4.23672819}
+  m_Size: {x: 1.33000004, y: 3.20016098, z: 12.2600002}
+  m_Center: {x: -5.44000006, y: .660000026, z: -3.41000009}
 --- !u!95 &9552426
 Animator:
   serializedVersion: 3

@@ -82,6 +82,7 @@ public class Robot_surfaceMove : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other){
+		Debug.Log ("Rover Colliding with   " + other.name);
 		if (other.tag == "Building") {
 			BuildingManager bm = other.collider.GetComponent<BuildingManager>();
 			if (Time.time > nextRepair){

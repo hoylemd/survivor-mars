@@ -32,9 +32,10 @@ class BuildingManager : MonoBehaviour {
       HP = maxHP;
     }
 
-    if (HP < 0) {
+    if (HP <= 0) {
       HP = 0;
       // BOOM!
+			GameObject.Find("GameController").GetComponent<GameController>().GameOver();
     }
     condition = ((float)HP / (float)maxHP);
 	hpGUI ();
@@ -71,4 +72,7 @@ class BuildingManager : MonoBehaviour {
 	void hpGUI(){
 		transform.GetChild (0).GetComponent<TextMesh> ().text = HP.ToString();
 	}
+
+
+
 }

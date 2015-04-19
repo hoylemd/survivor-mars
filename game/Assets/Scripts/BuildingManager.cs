@@ -37,6 +37,7 @@ class BuildingManager : MonoBehaviour {
       // BOOM!
     }
     condition = ((float)HP / (float)maxHP);
+	hpGUI ();
   }
 
   public void damage(int magnitude) {
@@ -52,6 +53,8 @@ class BuildingManager : MonoBehaviour {
   }
 
   void Start () {
+		hpGUI ();
+
     if (technology == null) {
       technology = GameObject.Find("/Technology").GetComponent<Technology>();
     }
@@ -64,4 +67,8 @@ class BuildingManager : MonoBehaviour {
     updateCondition();
     checkTech();
   }
+
+	void hpGUI(){
+		transform.GetChild (0).GetComponent<TextMesh> ().text = HP.ToString();
+	}
 }

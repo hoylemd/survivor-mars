@@ -47,17 +47,17 @@ using System.Collections.Generic;
     }
 
     void Update() {
-      O2Stock.text = ":" + stocks[ResourceType.O2];
-      CO2Stock.text = ":" + stocks[ResourceType.CO2];
-      PowerStock.text = ":" + stocks[ResourceType.Power];
-      OreStock.text = ":" + stocks[ResourceType.Ore];
-      IceStock.text = ":" + stocks[ResourceType.Ice];
+        O2Stock.text = stocks[ResourceType.O2].ToString();
+		CO2Stock.text = stocks[ResourceType.CO2].ToString();
+		PowerStock.text = stocks[ResourceType.Power].ToString();
+		OreStock.text = stocks[ResourceType.Ore].ToString();
+		IceStock.text = stocks[ResourceType.Ice].ToString();
     }
 
     public int updateStockLevel(ResourceAmount delta, bool decrease=false) {
       int newStock = stocks[delta.type] + ((decrease ? -1 : 1) * delta.amount);
 
-		Debug.Log ("Type   " + delta.type + "     Amount:    " + delta.amount);
+		//Debug.Log ("Type   " + delta.type + "     Amount:    " + delta.amount);
 
 		if (delta.type.ToString () == "Ore" && SolarUpgradeThreshold == stocks[delta.type]) {
 			SolarUpgradeButton.SetActive(true);		

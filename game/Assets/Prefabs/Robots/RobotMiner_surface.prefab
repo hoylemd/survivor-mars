@@ -620,6 +620,8 @@ MonoBehaviour:
   jitter: .400000006
   selected: 0
   inTube: 0
+  repairVal: 1
+  repairWait: 1
 --- !u!124 &12444576
 Behaviour:
   m_ObjectHideFlags: 1

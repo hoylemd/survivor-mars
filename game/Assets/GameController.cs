@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 	public GameObject[] SpawnPoints;
 	public GameObject CamToggleButton;
 	public GameObject click;
+	public GameObject gameOverUI;
 	public float mineDistanceLimit;
 	public float moveDistanceLimit;
 	public Camera Surface;
@@ -250,5 +251,17 @@ public class GameController : MonoBehaviour {
 		if (martianDaysPlayed == 687) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (16);}
 		//
 		UiMartianDays.GetComponent<Text>().text = "Martian Days " + martianDaysPlayed.ToString();
+	}
+
+	public void GameOver(){
+		
+		
+		Time.timeScale =0;
+		gameOverUI.SetActive (true);
+		
+	}
+
+	public void Restart(){
+		Application.LoadLevel (0);  
 	}
 }

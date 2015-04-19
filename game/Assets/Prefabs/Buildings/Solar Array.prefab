@@ -963,7 +963,7 @@ GameObject:
   - 95: {fileID: 9535520}
   - 65: {fileID: 6535520}
   - 114: {fileID: 11474046}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Solar Array
   m_TagString: Building
   m_Icon: {fileID: 0}
@@ -10829,8 +10829,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1196.45044, y: 319.788696, z: 783.439087}
-  m_Center: {x: 6.91792536, y: 78.2909393, z: -27.3759518}
+  m_Size: {x: 1196.45044, y: 459.654236, z: 134.707306}
+  m_Center: {x: 6.82095289, y: 148.223495, z: 299.600006}
 --- !u!95 &9535520
 Animator:
   serializedVersion: 3

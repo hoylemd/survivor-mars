@@ -148,7 +148,7 @@ GameObject:
   - 65: {fileID: 6577502}
   - 23: {fileID: 2377492}
   - 114: {fileID: 11465514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Settlement
   m_TagString: Building
   m_Icon: {fileID: 0}

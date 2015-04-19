@@ -240,6 +240,7 @@
      <Compile Include="Assets\Scripts\UpgradeCost.cs" />
      <Compile Include="Assets\SpawnEntrances.cs" />
      <Compile Include="Assets\ToastNotifications.cs" />
+     <Compile Include="Assets\closeUIElement.cs" />
      <Compile Include="Assets\rotateLight.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
